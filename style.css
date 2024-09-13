@@ -1,0 +1,31 @@
+body,
+html * {
+  font-size: 35px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 30rem;
+  height: 35rem;
+  border: 2px solid black;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card-img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.card-header {
+  font-size: 2.2rem;
+  margin-top: 1.2rem;
+}
+
+/* rem = relative unit 1 rem = 10px */
