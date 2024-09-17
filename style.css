@@ -7,6 +7,27 @@ html * {
 }
 
 .card {
+  width: 26%;
+  height: 30rem;
+  border: 2px solid black;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+/* .cardrow1 {
   width: 30rem;
   height: 35rem;
   border: 2px solid black;
@@ -18,9 +39,32 @@ html * {
   margin-bottom: 10px;
 }
 
+.cardrow2 {
+  width: 30rem;
+  height: 35rem;
+  border: 2px solid black;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.cardrow3 {
+  width: 30rem;
+  height: 35rem;
+  border: 2px solid black;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+} */
+
 .card-img {
   width: 100%;
-  height: 60%;
+  height: 65%;
   object-fit: cover;
 }
 
@@ -29,4 +73,13 @@ html * {
   margin-top: 1.2rem;
 }
 
+/* button {
+  background-color: red;
+  transition: all 0.3s;
+}
+button:hover {
+  transform: scale(1.2) translateY(-10px);
+  filter: grayscale(1);
+  background-color: yellow;
+} */
 /* rem = relative unit 1 rem = 10px */
