@@ -12,6 +12,8 @@ body {
 
 .title {
   font-size: 50px;
+  width: fit-content;
+  margin: auto;
 }
 
 .card {
@@ -96,13 +98,31 @@ body {
   margin-top: 1.2rem;
 }
 
-/* button {
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .card {
+    width: 90%;
+  }
+}
+button {
   background-color: red;
   transition: all 0.3s;
 }
-button:hover {
+#r1c1:hover {
   transform: scale(1.2) translateY(-10px);
-  filter: grayscale(1);
+  filter: contrast(1);
   background-color: yellow;
-} */
+}
+#r1c2:hover {
+  transform: scale(1.2) translateY(-10px);
+  filter: contrast(1);
+  background-color: yellow;
+}
+#r1c3:hover {
+  transform: scale(1.2) translateY(-10px);
+  filter: contrast(1);
+  background-color: yellow;
+}
 /* rem = relative unit 1 rem = 10px */
