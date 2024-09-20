@@ -16,27 +16,16 @@ body {
   margin: auto;
 }
 
-.card {
-  width: 27%;
-  height: 30rem;
-  min-width: 30rem;
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 5%;
-}
-
 .container {
   display: flex;
-  width: 93vw;
+  width: 93%;
   margin: 2rem auto;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .cardrow1 {
   width: 29%;
   height: 30rem;
@@ -98,18 +87,38 @@ body {
   margin-top: 1.2rem;
 }
 
-@media screen and (max-width: 800px) {
-  .container {
-    flex-direction: column;
-  }
-  .card {
-    width: 90%;
-  }
-}
-button {
+/* button {
   background-color: red;
   transition: all 0.3s;
+} */
+#r1c1 {
+  transition: 0.75s;
 }
+#r1c2 {
+  transition: 0.75s;
+}
+#r1c3 {
+  transition: 0.75s;
+}
+#r2c1 {
+  transition: 0.75s;
+}
+#r2c2 {
+  transition: 20s;
+}
+#r2c3 {
+  transition: 0.75s;
+}
+#r3c1 {
+  transition: 0.75s;
+}
+#r3c2 {
+  transition: 20s;
+}
+#r3c3 {
+  transition: 0.75s;
+}
+
 #r1c1:hover {
   transform: scale(1.2) translateY(-10px);
   filter: contrast(1);
@@ -117,12 +126,40 @@ button {
 }
 #r1c2:hover {
   transform: scale(1.2) translateY(-10px);
-  filter: contrast(1);
-  background-color: yellow;
+  filter: grayscale(1);
 }
 #r1c3:hover {
   transform: scale(1.2) translateY(-10px);
-  filter: contrast(1);
-  background-color: yellow;
+  filter: saturate(1);
+  background-color: red;
+}
+
+#r2c1:hover {
+  transform: skewX(35deg);
+}
+#r2c2:hover {
+  transform: scale(1.2) translateY(-10px);
+  transform: rotate(2000turn);
+}
+#r2c3:hover {
+  transform: skewX(35deg);
+}
+
+#r3c1:hover {
+}
+#r3c2:hover {
+  transform: rotate(5turn);
+}
+#r3c3:hover {
+  transform: rotate(-25turn);
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .card {
+    width: 90%;
+  }
 }
 /* rem = relative unit 1 rem = 10px */
