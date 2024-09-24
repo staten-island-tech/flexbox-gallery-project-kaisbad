@@ -12,8 +12,18 @@ body {
 
 .title {
   font-size: 50px;
+  font-family: sans-serif;
   width: fit-content;
   margin: auto;
+  text-shadow: 
+  -4px 4px #ef3550,
+  -8px 8px #f9a825,
+  -12px 12px #eeff41,
+  -16px 16px #43a047,
+  -20px 20px #26c6da,
+  -24px 24px #2196f3,
+  -28px 28px #f48fb1,
+  -32px 32px #7e57c2;
 }
 
 .container {
@@ -27,8 +37,9 @@ body {
 }
 
 .card {
+  transition: 0.5s;
   width: 22%;
-  height: 30rem;
+  height: 25rem;
   border: 2px solid white;
   border-radius: 3px;
   display: flex;
@@ -38,20 +49,16 @@ body {
   margin-bottom: 4%;
   box-shadow: 9px 8px black;
   border-radius: 2rem;
+  text-shadow: 
+  -1px 1px #ef3550,
+  -2px 2px #f9a825,
+  -3px 3px #eeff41,
+  -4px 4px #43a047,
+  -5px 5px #26c6da,
+  -6px 6px #2196f3,
+  -7px 7px #f48fb1,
+  -8px 8px #7e57c2;
   background-color: rgb(120, 0, 255);
-}
-
-#violet {
-  background-color: blueviolet;
-}
-#pink {
-  background-color: deeppink;
-}
-#magenta {
-  background-color: magenta;
-}
-#blue {
-  background-color: blue;
 }
 
 .card-img {
@@ -71,67 +78,23 @@ body {
   background-color: red;
   transition: all 0.3s;
 } */
-#r1c1 {
-  transition: 0.75s;
-}
-#r1c2 {
-  transition: 0.75s;
-}
-#r1c3 {
-  transition: 0.75s;
-}
-#r2c1 {
-  transition: 0.75s;
-}
-#r2c2 {
-  transition: 0s;
-}
-#r2c3 {
-  transition: 0.75s;
-}
-#r3c1 {
-  transition: 0.75s;
-}
-#r3c2 {
-  transition: 20s;
-}
-#r3c3 {
-  transition: 0.75s;
-}
 
+.card:hover { 
+  transform:scale(1.1);
+  filter: contrast(1);
+  background: linear-gradient(135deg, red, orange, yellow, rgb(0, 145, 0), blue, indigo, violet, red);
+}
 #r1c1:hover {
   transform: scale(1.2) translateY(-10px);
   filter: contrast(1);
   background-color: yellow;
 }
-#r1c2:hover {
-  transform: scale(1.2) translateY(-10px);
-  filter: grayscale(1);
-}
-#r1c3:hover {
-  transform: scale(1.2) translateY(-10px);
-  filter: saturate(1);
-  background-color: red;
-}
-
 #r2c1:hover {
   transform: skewX(35deg);
 }
 #r2c2:hover {
   transform: scale(1.2) translateY(-10px);
   transform: rotate(2000turn);
-}
-#r2c3:hover {
-  transform: skewX(35deg);
-}
-
-#r3c1:hover {
-}
-#r3c2:hover {
-  transform: rotate(5turn);
-}
-#r3c3:hover {
-  transform: rotate(-25turn);
 }
 
 @media screen and (max-width: 800px) {
@@ -142,4 +105,23 @@ body {
     width: 90%;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+  .card {
+    width: 90%;
+  }
+}
+
+#card10 { }
+
+@keyframes card10 {
+  0%{ 
+    
+  }
+}
+
+
 /* rem = relative unit 1 rem = 10px */
