@@ -1,16 +1,16 @@
 body,
 html * {
   font-size: 2.5rem;
-  color: white;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 body {
   background-color: #89cff0;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .title {
@@ -91,7 +91,7 @@ body {
 }
 
 .n3:hover {
-  transform: scale(3, 0.5)
+  transform: scale(3, 0.5);
 }
 
 .n4:hover {
@@ -101,8 +101,9 @@ body {
 .n5:hover {
   animation: jump 1s ease-in-out infinite alternate;
 }
-@keyframes jump{
-  0%{transform: translateY(-15%);
+@keyframes jump {
+  0% {
+    transform: translateY(-15%);
   }
   20% {
     transform: translateY(15%);
@@ -124,8 +125,9 @@ body {
 .n6:hover {
   animation: slidein 1s linear infinite alternate;
 }
-@keyframes slidein{
-  0%{transform: translateX(-15%);
+@keyframes slidein {
+  0% {
+    transform: translateX(-15%);
   }
   20% {
     transform: translateX(15%);
@@ -139,22 +141,22 @@ body {
   80% {
     transform: translateX(-15%);
   }
-  100%{
+  100% {
     transform: translateX(15%);
   }
 }
 
-.n7{
+.n7 {
   transition: all 1s;
 }
-.n7:hover{
+.n7:hover {
   transform: scale(2) rotate(180deg);
 }
 
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
-    justify-content: center;
+    margin: auto;
   }
   .card {
     width: 90%;
